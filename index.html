@@ -1,95 +1,94 @@
 <!doctype html>
-<html lang="en">	
+<html lang="en">
 <head>
-	<meta charset="utf-8"/>
-	<title>Home- Thanh Dinh Ta - Verimag</title>	
-	<meta name="author" content="Thanh Dinh Ta">
-	
-	<link rel="stylesheet" href="http://www-verimag.imag.fr/~tat/css/main.css" type="text/css" />
+  <meta charset="utf-8"/>
+  <title>Home- Thanh Dinh Ta - Verimag</title>
+  <meta name="author" content="Thanh Dinh Ta">
+
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css">
 </head>
-	
+
 <body>
-
     <div class="container">
-	  
-	  <header role="banner">
-	    <div class="feeds">
-	    </div>
-	      <nav class="pages">
-			  <a href="http://www-verimag.imag.fr/~tat/index.html">Home</a>
--			  <a href="http://www-verimag.imag.fr/~tat/pages/curriculum-vitae.html">Curriculum Vitae</a>
--			  <a href="http://www-verimag.imag.fr/~tat/pages/research.html">Research</a>
-	      </nav>
-		<a href="http://www-verimag.imag.fr/~tat" class="title">Thanh Dinh Ta - Verimag</a>
-      </header>
-	
-	  <div class="wrapper">
 
-		  <div role="main" class="content">
+    <header role="banner">
+        <!-- <div class="feeds"> -->
+        <!-- </div> -->
+        <nav class="pages">
+        <a href="index.html">Home</a>
+        <!-- -       <a href="http://www-verimag.imag.fr/~tat/pages/curriculum-vitae.html">Curriculum Vitae</a> -->
+        <!-- -       <a href="http://www-verimag.imag.fr/~tat/pages/research.html">Research</a> -->
+        <a href="files/cv.pdf">Curriculum Vitae</a>
+        </nav>
+        <a href="http://www-verimag.imag.fr/~tat" class="title">Thanh Dinh Ta - Verimag</a>
+    </header>
 
-<h2>About</h2>
-<div class="section" id="about">
-	<p>
-		I am a postdoctoral researcher at Joseph Fourier University, working in the <a href="http://www-verimag.imag.fr/PACSS-members.html?lang=en">PACSS</a> group at the laboratory Verimag. I have completed my PhD at Lorraine University, in the <a href="http://carte.loria.fr/">CARTE</a> group at the laboratory Loria.
-	</p>	
-	<p>
-		My research focuses on the binary code analysis and on the detection of malwares. I am interested in formal models of programs and their applications in extracting high-level properties from obfuscated binary codes.
-	</p>
-</div>
+    <!-- <div class="wrapper"> -->
 
-<h2>Publications</h2>
-<div class="section" id="publication">
-	<div class="span1 columns"><strong>SANER 2016</strong></div>
-	
-</div>
+    <div role="main" class="content">
 
-<!-- <div class="section" id="about-me">
-<h2>About me</h2>
-<ul class="simple">
-<li>PhD student under the supervision of <a class="reference external" href="http://www-verimag.imag.fr/~potet/">Marie-Laure Potet</a> and Philippe de Choudens (Evaluator at the Leti-ITSEF).</li>
-<li>CEA Grenoble</li>
-<li>E-mail: louis (dot) dureuil (at) cea (dot) fr</li>
-<li>Phone: +33 673 084 190</li>
-</ul>
-</div>
-<div class="section" id="topics">
-<h2>Topics</h2>
-<ul class="simple">
-<li>Security: Consequences of fault Injection in smartcards<ul>
-<li>Fault tolerance</li>
-<li>Perturbation attacks</li>
-<li>Smartcard simulation</li>
-</ul>
-</li>
-<li>Code Analysis<ul>
-<li>Binary code analysis</li>
-<li>Static code analysis</li>
-<li>Concrete-Symbolic (concolic) code analysis</li>
-</ul>
-</li>
-<li>Compilation<ul>
-<li>Just-In-Time compilation</li>
-<li>LLVM toolchain</li>
-<li>Language design</li>
-</ul>
-</li>
-</ul>
-</div>
-		
+        <h3>About me</h3>
+        <div class="section" id="about">
+            <p>
+                I am a postdoctoral researcher at Joseph Fourier University, working in the <a href="http://www-verimag.imag.fr/PACSS-members.html?lang=en">PACSS</a> group at the laboratory Verimag. I have completed my PhD at Lorraine University, in the <a href="http://carte.loria.fr/">CARTE</a> group at the laboratory Loria.
+            </p>
+            <p>
+                My research focuses on the binary code analysis and on the detection of malwares. I am interested in formal models of programs and their applications in extracting high-level properties of programs from obfuscated binary codes.
+            </p>
+            <p>
+                In my spare time, I do reverse engineering and write some <a href="https://github.com/tathanhdinh/write-ups">write-ups</a>. I write also some <a href="http://crackmes.de/users/monads/facets/">self-modifying code</a> challenges.
+            </p>
+        </div>
 
-		  </div>	
-		  
-	  </div> -->
+        <h3>Publications</h3>
+        <div class="section" id="publications">
+            <div class="row">
+                <div class="col-md-2"><strong>SANER 2016</strong></div>
+                <div class="col-md-10">
+                    <strong>BINSEC/SE: A Dynamic Symbolic Execution Toolkit for Binary-level Analysis</strong> (<a href="papers/SANER_2016.pdf">pdf</a>)
+                    <p>Robin David, Sebastien Bardin, Mounier Laurent, Thanh Dinh Ta, Jean-Yves Marion, Josselin Feist and Marie-Laure Potet</p>
+                    <!-- <p>23rd IEEE International Conference on Software Analysis, Evolution, and Reengineering</p> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"><strong>FPS 2014</strong></div>
+                <div class="col-md-10">
+                    <strong>Malware Message Classification by Dynamic Analysis</strong> (<a href="papers/FPS_2014.pdf">pdf</a>)
+                    <p>Guillaume Bonfante, Jean-Yves Marion, and Thanh Dinh Ta</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"><strong>TAMC 2014</strong></div>
+                <div class="col-md-10">
+                    <strong>A Categorical Treatment of Malicious Behavioral Obfuscation</strong> (<a href="papers/TAMC_2014.pdf">pdf</a>)
+                    <p>Romain Péchoux and Thanh Dinh Ta</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"><strong>BOTCONF 2013</strong><p>(Short paper)</p></div>
+                <div class="col-md-10">
+                    <strong>Efficient Program Exploration by Input Fuzzing</strong> (<a href="papers/Botconf13.pdf">pdf</a>)
+                    <p>Guillaume Bonfante, Jean-Yves Marion, and Thanh Dinh Ta</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"><strong>GRSRD 2013</strong><p>(Poster)</p></div>
+                <div class="col-md-10">
+                    <strong>Malware Message Analysis through Binary Traces</strong> (<a href="papers/GRSRD_2014.pdf">pdf</a>)
+                    <p>Guillaume Bonfante, Jean-Yves Marion, and Thanh Dinh Ta</p>
+                </div>
+            </div>
+        </div>
 
-      <footer>
-		<p role="contentinfo">
-		  Powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>. Theme <a href="https://github.com/fle/pelican-sober">pelican-sober</a>.
-    	</p>
+        <footer>
+            <p role="contentinfo">
+                Using CSS templates of <a href="https://github.com/fle/pelican-sober">pelican-sober</a> and <a href="http://getbootstrap.com/">Bootstrap</a>
+                <!-- Powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a> and by <a hrep="http://getbootstrap.com/">. -->
+                <!-- Theme <a href="https://github.com/fle/pelican-sober">pelican-sober</a>. -->
+            </p>
+        </footer>
 
-	  </footer>	
-
-	</div>
-	
-
+    </div>
 </body>
 </html>
