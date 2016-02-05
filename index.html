@@ -11,87 +11,85 @@
 
 <body>
     <div class="container">
+        <header role="banner">
+            <!-- <div class="feeds"> -->
+            <!-- </div> -->
+            <nav class="pages">
+                <a href="index.html">Home</a>
+                <!-- -       <a href="http://www-verimag.imag.fr/~tat/pages/curriculum-vitae.html">Curriculum Vitae</a> -->
+                <!-- -       <a href="http://www-verimag.imag.fr/~tat/pages/research.html">Research</a> -->
+                <a href="files/cv.pdf">Curriculum Vitae</a>
+            </nav>
+            <a href="http://www-verimag.imag.fr/~tat" class="title">Thanh Dinh Ta</a>
+        </header>
 
-    <header role="banner">
-        <!-- <div class="feeds"> -->
-        <!-- </div> -->
-        <nav class="pages">
-        <a href="index.html">Home</a>
-        <!-- -       <a href="http://www-verimag.imag.fr/~tat/pages/curriculum-vitae.html">Curriculum Vitae</a> -->
-        <!-- -       <a href="http://www-verimag.imag.fr/~tat/pages/research.html">Research</a> -->
-        <a href="files/cv.pdf">Curriculum Vitae</a>
-        </nav>
-        <a href="http://www-verimag.imag.fr/~tat" class="title">Thanh Dinh Ta</a>
-    </header>
+        <!-- <div class="wrapper"> -->
 
-    <!-- <div class="wrapper"> -->
+        <div role="main" class="content">
+            <h3>About me</h3>
+            <div class="section" id="about">
+                <p>
+                    I am a postdoctoral researcher at Joseph Fourier University, working in <a href="http://www-verimag.imag.fr/PACSS-members.html?lang=en">PACSS</a> group at  Verimag laboratory. I currently participate in <a href="http://binsec.gforge.inria.fr/">BinSec</a> project to design and implement a guided <em>dynamic symbolic execution</em> engine, and for a formal approach to deobfuscate <em>virtualization-obfsucated</em> binaries. 
+                </p>
+                <p>
+                    Before joining PACSS, I have completed my PhD at Lorraine University, in <a href="http://carte.loria.fr/">CARTE</a> group at Loria laboratory. My <a href="files/these.pdf">thesis</a> is about a formal model for <em>obfuscating transformations</em> on behaviors of programs, and about a semantics-based method to <em>synthensizing hidden automata</em> which are used to parse input messages of obfuscated binaries. <u>In the malicious code detection context</u>, the former proves (and gives also a constructive method to obtain) the existence of cases where malwares can <em>bypass</em> the behavioral detection. The latter allows to recover the <em>format of input messages</em> of a bot (in some botnet), even when the bot sample is highly obfuscated.
+                </p>
+                <p>
+                    My research focuses on automated methods for computer security, particularly for <em>binary code analysis</em> and <em>malware detection</em>. I am interested in formal models of programs and their applications in extracting <em>high-level similarities</em> between obfuscated programs.
+                </p>
+            </div>
 
-    <div role="main" class="content">
+            <h3>Publications <span>[<a href="http://dblp.uni-trier.de/pers/hd/t/Ta:Thanh_Dinh">DBLP</a>]</span></h3>
+            <div class="section" id="publications">
+                <div class="row">
+                    <div class="col-md-2"><strong>SANER 2016</strong></div>
+                    <div class="col-md-10">
+                        <strong>BINSEC/SE: A Dynamic Symbolic Execution Toolkit for Binary-level Analysis (accepted)</strong> (<a href="papers/SANER_2016.pdf">pdf</a>)
+                        <p>Robin David, Sebastien Bardin, Mounier Laurent, Thanh Dinh Ta, Jean-Yves Marion, Josselin Feist and Marie-Laure Potet</p>
+                        <!-- <p>23rd IEEE International Conference on Software Analysis, Evolution, and Reengineering</p> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2"><strong>FPS 2014</strong></div>
+                    <div class="col-md-10">
+                        <strong>Malware Message Classification by Dynamic Analysis</strong> (<a href="papers/FPS_2014.pdf">pdf</a>)
+                        <p>Guillaume Bonfante, Jean-Yves Marion, and Thanh Dinh Ta</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2"><strong>TAMC 2014</strong></div>
+                    <div class="col-md-10">
+                        <strong>A Categorical Treatment of Malicious Behavioral Obfuscation</strong> (<a href="papers/TAMC_2014.pdf">pdf</a>)
+                        <p>Romain Péchoux and Thanh Dinh Ta</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2"><strong>BOTCONF 2013</strong><p></p></div>
+                    <div class="col-md-10">
+                        <strong>Efficient Program Exploration by Input Fuzzing</strong> (peer-reviewed but non-academic conference) (<a href="papers/Botconf13.pdf">pdf</a>)
+                        <p>Guillaume Bonfante, Jean-Yves Marion, and Thanh Dinh Ta</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2"><strong>GRSRD 2013</strong><p></p></div>
+                    <div class="col-md-10">
+                        <strong>Malware Message Analysis through Binary Traces</strong> (poster) (<a href="papers/GRSRD_2014.pdf">pdf</a>)
+                        <p>Guillaume Bonfante, Jean-Yves Marion, and Thanh Dinh Ta</p>
+                    </div>
+                </div>
+            </div>
 
-        <h3>About me</h3>
-        <div class="section" id="about">
-            <p>
-                I am a postdoctoral researcher at Joseph Fourier University, working in <a href="http://www-verimag.imag.fr/PACSS-members.html?lang=en">PACSS</a> group at  Verimag laboratory. I currently participate in <a href="http://binsec.gforge.inria.fr/">BinSec</a> project to design and implement a guided <em>dynamic symbolic execution</em> engine, and to study a formal approach to deobfuscate <em>virtualization-obfsucated</em> binaries. 
-            </p>
-            <p>
-                Before joining PACSS, I have completed my PhD at Lorraine University, in <a href="http://carte.loria.fr/">CARTE</a> group at Loria laboratory. My <a href="files/these.pdf">thesis</a> is about a formal model for <em>obfuscating transformations</em> on behaviors of programs, and about a semantics-based method to <em>synthensizing</em> hidden automata which are used to parse received messages of obfuscated binaries.
-            </p>
-            <p>
-                My research focuses on automated methods for computer security, particularly for <em>binary code analysis</em> and <em>malware detection</em>. I am interested in formal models of programs and their applications in extracting <em>high-level similarities</em> between obfuscated programs.
-            </p>
+            <h3>Miscellaneous</h3>
+            <div class="section" id="miscs">
+        	      I develop some <a href="https://github.com/tathanhdinh/PathExplorer">binary</a> <a href="https://bitbucket.org/tathanhdinh/relative-pattern">code</a> <a href="https://github.com/tathanhdinh/SyscallTrace">analysis</a> and <a href="https://github.com/tathanhdinh/kDetect">tracing</a> tools (C++ and OCaml are my favourite programming languages). In my spare time, I enjoy <a href="http://reverseengineering.stackexchange.com/users/1619/tathanhdinh">reverse engineering</a> and sometimes note <a href="https://github.com/tathanhdinh/write-ups">writeups</a> (one of them is cited <a href="http://www.miasm.re/blog/2016/01/27/re150.html">here</a>). My first non-trivial results might be <a href="https://recon.cx/2015/slides/recon2015-14-christopher-domas-The-movfuscator.pdf">M/o/Vfuscator</a> crackmes for which I have recovered their original <a href="https://github.com/tathanhdinh/write-ups/tree/master/Movfuscator2_REcon">control flow graphs</a>. I implement also an <em>anti-emulation</em> <a href="http://crackmes.de/users/monads/facets/">self-modifying code</a> challenge (some people have discussed about it <a href="http://reverseengineering.stackexchange.com/questions/11578/reversing-self-modifying-code">here</a>).
+            </div>
+
+            <footer>
+                <p class="text-center" role="contentinfo">
+                    This webpage uses CSS templates of <a href="https://github.com/fle/pelican-sober">pelican-sober</a> and <a href="http://getbootstrap.com/">Bootstrap</a>
+                </p>
+            </footer>
         </div>
-
-        <h3>Publications <span>[<a href="http://dblp.uni-trier.de/pers/hd/t/Ta:Thanh_Dinh">DBLP</a>]</span></h3>
-        <div class="section" id="publications">
-            <div class="row">
-                <div class="col-md-2"><strong>SANER 2016</strong></div>
-                <div class="col-md-10">
-                    <strong>BINSEC/SE: A Dynamic Symbolic Execution Toolkit for Binary-level Analysis (accepted)</strong> (<a href="papers/SANER_2016.pdf">pdf</a>)
-                    <p>Robin David, Sebastien Bardin, Mounier Laurent, Thanh Dinh Ta, Jean-Yves Marion, Josselin Feist and Marie-Laure Potet</p>
-                    <!-- <p>23rd IEEE International Conference on Software Analysis, Evolution, and Reengineering</p> -->
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2"><strong>FPS 2014</strong></div>
-                <div class="col-md-10">
-                    <strong>Malware Message Classification by Dynamic Analysis</strong> (<a href="papers/FPS_2014.pdf">pdf</a>)
-                    <p>Guillaume Bonfante, Jean-Yves Marion, and Thanh Dinh Ta</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2"><strong>TAMC 2014</strong></div>
-                <div class="col-md-10">
-                    <strong>A Categorical Treatment of Malicious Behavioral Obfuscation</strong> (<a href="papers/TAMC_2014.pdf">pdf</a>)
-                    <p>Romain Péchoux and Thanh Dinh Ta</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2"><strong>BOTCONF 2013</strong><p></p></div>
-                <div class="col-md-10">
-                    <strong>Efficient Program Exploration by Input Fuzzing</strong> (peer-reviewed but non-academic conference) (<a href="papers/Botconf13.pdf">pdf</a>)
-                    <p>Guillaume Bonfante, Jean-Yves Marion, and Thanh Dinh Ta</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2"><strong>GRSRD 2013</strong><p></p></div>
-                <div class="col-md-10">
-                    <strong>Malware Message Analysis through Binary Traces</strong> (poster) (<a href="papers/GRSRD_2014.pdf">pdf</a>)
-                    <p>Guillaume Bonfante, Jean-Yves Marion, and Thanh Dinh Ta</p>
-                </div>
-            </div>
-        </div>
-
-        <h3>Miscellaneous</h3>
-        <div class="section" id="miscs">
-        	  I develop some <a href="https://github.com/tathanhdinh/PathExplorer">binary</a> <a href="https://bitbucket.org/tathanhdinh/relative-pattern">code</a> <a href="https://github.com/tathanhdinh/SyscallTrace">analysis</a> and <a href="https://github.com/tathanhdinh/kDetect">tracing</a> tools (C++ and OCaml are my favourite programming languages). In my spare time, I enjoy reverse engineering and sometimes note <a href="https://github.com/tathanhdinh/write-ups">writeups</a>. My first non-trivial results might be <a href="https://recon.cx/2015/slides/recon2015-14-christopher-domas-The-movfuscator.pdf">M/o/Vfuscator</a> crackmes for which I have arrived to recover their original <a href="https://github.com/tathanhdinh/write-ups/tree/master/Movfuscator2_REcon">control flow graphs</a>. I contribute also an <em>anti-emulation</em> <a href="http://crackmes.de/users/monads/facets/">self-modifying code</a> challenge (some people have discussed about it <a href="http://reverseengineering.stackexchange.com/questions/11578/reversing-self-modifying-code">here</a>).
-        </div>
-
-        <footer>
-            <p role="contentinfo">
-                This webpage uses CSS templates of <a href="https://github.com/fle/pelican-sober">pelican-sober</a> and <a href="http://getbootstrap.com/">Bootstrap</a>
-            </p>
-        </footer>
-    </div>
     </div>
 </body>
 </html>
