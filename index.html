@@ -18,7 +18,7 @@
                 <a href="index.html">Home</a>
                 <!-- -       <a href="http://www-verimag.imag.fr/~tat/pages/curriculum-vitae.html">Curriculum Vitae</a> -->
                 <!-- -       <a href="http://www-verimag.imag.fr/~tat/pages/research.html">Research</a> -->
-                <a href="files/cv.pdf">Curriculum Vitae</a>
+                <a href="files/cv_lastest.pdf">Curriculum Vitae</a>
             </nav>
             <a href="http://www-verimag.imag.fr/~tat" class="title">Thanh Dinh Ta</a>
         </header>
@@ -29,25 +29,35 @@
             <h3>About me</h3>
             <div class="section" id="about">
                 <p>
-                    I am a postdoctoral researcher at Joseph Fourier University, working in <a href="http://www-verimag.imag.fr/PACSS-members.html?lang=en">PACSS</a> group at  Verimag laboratory. I currently participate in <a href="http://binsec.gforge.inria.fr/">BinSec</a> project to design and implement a guided <em>dynamic symbolic execution</em> engine, and for a formal approach to deobfuscate <em>virtualization-obfsucated</em> binaries. 
+                    I am a postdoctoral researcher at Joseph Fourier University, working in <a href="http://www-verimag.imag.fr/PACSS-members.html?lang=en">PACSS</a> group at  Verimag laboratory. I currently participate in <a href="http://binsec.gforge.inria.fr/">BinSec</a> project to design and implement a guided <em>dynamic symbolic execution</em> engine, and for a formal approach to deobfuscate <em>virtualization-obfsucated</em> binaries.
                 </p>
                 <p>
                     Before joining PACSS, I have completed my PhD at Lorraine University, in <a href="http://carte.loria.fr/">CARTE</a> group at Loria laboratory. My <a href="files/these.pdf">thesis</a> is about a formal model for <em>obfuscating transformations</em> on behaviors of programs, and about a semantics-based method to <em>synthensizing hidden automata</em> of input message parsers of malwares.
                 </p>
                 <p>
-                    My research focuses on automated methods for computer security, particularly for <em>binary code analysis</em> and <em>malware detection</em>. I am interested in formal models of programs and their applications in extracting <em>high-level similarities</em> between obfuscated programs.
+                    My research focuses on automated methods for computer security, particularly for <em>binary code analysis</em> and <em>malware detection</em>. I am interested in formal methods on program analysis/verification, and their applications in extracting <em>high-level similarities</em> between obfuscated programs.
                 </p>
             </div>
 
             <h3>Publications <span>[<a href="http://dblp.uni-trier.de/pers/hd/t/Ta:Thanh_Dinh">DBLP</a>]</span></h3>
             <div class="section" id="publications">
                 <div class="row">
+                    <div class="col-md-2"><strong>ISSTA 2016</strong></div>
+                    <div class="col-md-10">
+                        <strong>Specification of Concretization and Symbolization Policies in Symbolic Execution (accepted)</strong> (<a href="papers/">pdf</a>)
+                        <p>Robin David, Sébastien Bardin, Laurent Mounier, Marie-Laure Potet, Thanh Dinh Ta, Jean-Yves Marion and Josselin Feist</p>
+                        <p>
+                            This is a joint work with BinSec's members. The paper introduces a <em>meta-language</em> implemented in BINSEC/SE framework to specify explicitly <em>concretization/symbolization policies</em> for concolic execution. We show that implicit policies used in other frameworks can be implemented using our language. We presents the effect of applying different policies in symbolic execution on several large testsuites.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-md-2"><strong>SANER 2016</strong></div>
                     <div class="col-md-10">
                         <strong>BINSEC/SE: A Dynamic Symbolic Execution Toolkit for Binary-level Analysis (accepted)</strong> (<a href="papers/SANER_2016.pdf">pdf</a>)
                         <p>Robin David, Sebastien Bardin, Mounier Laurent, Thanh Dinh Ta, Jean-Yves Marion, Josselin Feist and Marie-Laure Potet</p>
                         <p>
-                            This is a joint work with BinSec's members. The paper introduces a framework for concolic (i.e. dynamic symbolic) execution on binary codes with parametric <em>concretization/symbolization policies</em> and an extensible execution engine based on the framework. We presents experimentations of BinSec's platform on real-world security challenges and malwares.
+                            This is a joint work with BinSec's members. The paper introduces a framework for concolic (i.e. dynamic symbolic) execution on binary codes with parametric <em>concretization/symbolization policies</em> and an extensible execution engine based on the framework. We presents experimentations of BinSec's platform on security challenges and malwares.
                         </p>
                     </div>
                 </div>
@@ -57,7 +67,7 @@
                         <strong>Malware Message Classification by Dynamic Analysis</strong> (<a href="papers/FPS_2014.pdf">pdf</a>)
                         <p>Guillaume Bonfante, Jean-Yves Marion, and Thanh Dinh Ta</p>
                         <p>
-                            This is a joint work my PhD advisors. The paper presents a mathematical approach to <em>synthesizing</em> the automaton used in the input message parser of a program. We need very few hypotheses on the actual implementation of the parser by the program and the soundness of the approach is rigrously proved. The experimental implementation given in the tool <a href="https://github.com/tathanhdinh/PathExplorer"></a> has used automatic dynamic binary instrumentation; yet it can be made better by concolic execution.
+                            This is a joint work my PhD advisors. The paper presents a mathematical approach to <em>synthesizing</em> the automaton used in <em>the input message parser</em> of a program. We need very few hypotheses on the actual implementation of the parser by the program and the soundness of the approach is rigrously proved. The experimental implementation given in <a href="https://github.com/tathanhdinh/PathExplorer">PathExplorer</a> has used automatic dynamic binary instrumentation; yet it can be made better by concolic execution.
                         </p>
                     </div>
                 </div>
@@ -67,7 +77,7 @@
                         <strong>A Categorical Treatment of Malicious Behavioral Obfuscation</strong> (<a href="papers/TAMC_2014.pdf">pdf</a>)
                         <p>Romain Péchoux and Thanh Dinh Ta</p>
                         <p>
-                            This is a joint work with my first PhD co-advisor. The paper presents at the first time a formal model for <em>obfuscating transformations</em> on behaviors of programs. We then proves several constructive obfuscating transformations which can be extracted from the model. The experimental implementation is given in the tool <a href="https://github.com/tathanhdinh/SyscallTrace">SyscallTrace</a>. A much better implementation is then realized by <a href="https://www22.in.tum.de/feebo/">FEEBO</a> in Technische Universität München.
+                            This is a joint work with my first PhD co-advisor. The paper presents at the first time a formal model for <em>obfuscating transformations</em> on behaviors of programs. We then proves several constructive obfuscating transformations which can be extracted from the model. The experimental implementation is given in <a href="https://github.com/tathanhdinh/SyscallTrace">SyscallTrace</a>. A much better implementation is then realized by <a href="https://www22.in.tum.de/feebo/">FEEBO</a> in Technische Universität München.
                         </p>
                     </div>
                 </div>
@@ -89,7 +99,8 @@
 
             <h3>Miscellaneous</h3>
             <div class="section" id="miscs">
-        	      I develop some <a href="https://github.com/tathanhdinh/PathExplorer">binary</a> <a href="https://bitbucket.org/tathanhdinh/relative-pattern">code</a> <a href="https://github.com/tathanhdinh/SyscallTrace">analysis</a> and <a href="https://github.com/tathanhdinh/kDetect">tracing</a> tools (C++ and OCaml are my favourite programming languages). In my spare time, I enjoy <a href="http://reverseengineering.stackexchange.com/users/1619/tathanhdinh">reverse engineering</a> and sometimes note <a href="https://github.com/tathanhdinh/write-ups">writeups</a> (one of them is cited <a href="http://www.miasm.re/blog/2016/01/27/re150.html">here</a>). My first non-trivial results might be on <a href="https://recon.cx/2015/slides/recon2015-14-christopher-domas-The-movfuscator.pdf">M/o/Vfuscator</a> crackmes for which I have recovered their original <a href="https://github.com/tathanhdinh/write-ups/tree/master/Movfuscator2_REcon">control flow graphs</a>. I implement also an <em>anti-emulation</em> <a href="http://crackmes.de/users/monads/facets/">self-modifying code</a> challenge (some people have discussed about it <a href="http://reverseengineering.stackexchange.com/questions/11578/reversing-self-modifying-code">here</a>).
+        	      <!-- I develop some <a href="https://github.com/tathanhdinh/PathExplorer">binary</a> <a href="https://bitbucket.org/tathanhdinh/relative-pattern">code</a> <a href="https://github.com/tathanhdinh/SyscallTrace">analysis</a> and <a href="https://github.com/tathanhdinh/kDetect">tracing</a> tools (C++ and OCaml are my favourite programming languages).-->
+                In my spare time, I enjoy <a href="http://reverseengineering.stackexchange.com/users/1619/tathanhdinh">reverse engineering</a> and sometimes note <a href="https://github.com/tathanhdinh/write-ups">write-ups</a> (thanks MIASM for <a href="http://www.miasm.re/blog/2016/01/27/re150.html">citing</a>). The first non-trivial results to me might be on <a href="https://recon.cx/2015/slides/recon2015-14-christopher-domas-The-movfuscator.pdf">M/o/Vfuscator</a> crackmes for which I have recovered the original <a href="https://github.com/tathanhdinh/write-ups/tree/master/Movfuscator2_REcon">control flow graphs</a>. I implement several crackmes: an <a href="http://crackmes.de/users/monads/facets/">anti-emulation self-modifying code</a> (a <a href="http://reverseengineering.stackexchange.com/questions/11578/reversing-self-modifying-code">discussion</a> about it), and a <a href="http://crackmes.de/users/monads/berkut/">continuation passing style</a> challenge.
             </div>
 
             <footer>

@@ -325,3 +325,5 @@ li.tag-4 { font-size: 110%; margin: 0 1em; }
   }
 }
 
+/* custom */
+h3 span { font-size: 14px; }
